@@ -7,6 +7,7 @@ import ShoppingList from './components/ShoppingList';
 import MemoTodo from './components/MemoTodo';
 import Calculator from './components/Calculator';
 import Weather from './components/Weather';
+import WeatherExtra from './components/WeatherExtra';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/memo-todo" element={<MemoTodo />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/weather" element={<Weather />} />
+          <Route path="/weather-extra" element={<WeatherExtra />} />
         </Routes>
       </Router>
     </>

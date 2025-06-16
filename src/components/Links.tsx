@@ -9,6 +9,7 @@ const Links = () => {
       <Link to="/memo-todo">Memo+Todo</Link>
       <Link to="/calculator">Calculator</Link>
       <Link to="/weather">Weather</Link>
+      <Link to="/weather-extra">Weather Extra</Link>
     </div>
   );
 };
