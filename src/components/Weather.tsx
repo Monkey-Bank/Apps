@@ -29,6 +29,7 @@ const Weather = () => {
         const response = await apiClient.get<WeatherData>(
           '/forecast/city/130010'
         );
+        console.log(response.data);
         setWeather(response.data);
       } catch (err) {
         setError((err as Error).message);
