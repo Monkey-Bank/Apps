@@ -10,6 +10,7 @@ const Links = () => {
       <Link to="/calculator">Calculator</Link>
       <Link to="/weather">Weather</Link>
       <Link to="/weather-extra">Weather Extra</Link>
+      <Link to="/pagination">Pagination</Link>
     </div>
   );
 };

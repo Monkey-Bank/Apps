@@ -8,6 +8,7 @@ import MemoTodo from './components/MemoTodo';
 import Calculator from './components/Calculator';
 import Weather from './components/Weather';
 import WeatherExtra from './components/WeatherExtra';
+import Pagination from './components/Pagination';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/weather" element={<Weather />} />
           <Route path="/weather-extra" element={<WeatherExtra />} />
+          <Route path="/pagination" element={<Pagination />} />
         </Routes>
       </Router>
     </>
