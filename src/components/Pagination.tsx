@@ -36,20 +36,28 @@ function Pagination() {
   return (
     <div>
       <AlbumList albums={albums} currentAlbums={currentAlbums} />
-      <ReactPaginate
-        pageCount={pageCount}
-        onPageChange={handlePageClick}
-        previousLabel={'<'}
-        nextLabel={'>'}
-        breakLabel={'...'}
-        marginPagesDisplayed={2} // 一番最初と最後を基準にして、そこからいくつページ数を表示するか
-        pageRangeDisplayed={5} // アクティブなページを基準にして、そこからいくつページ数を表示するか
-        containerClassName={'pagination'} // ページネーションであるulに着くクラス名
-        activeClassName={'active'} // アクティブなページのliに着くクラス名
-        previousClassName={'pagination__previous'} // 「<」のliに着けるクラス名
-        nextClassName={'pagination__next'} // 「>」のliに着けるクラス名
-        disabledClassName={'pagination__disabled'} // 使用不可の「<,>」に着くクラス名
-      />
+      <div className="paginationWrapper">
+        <ReactPaginate
+          pageCount={pageCount}
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={3}
+          marginPagesDisplayed={2}
+          nextLabel="next >"
+          previousLabel="< previous"
+          pageClassName="page-item"
+          pageLinkClassName="page-link"
+          previousClassName="page-item"
+          previousLinkClassName="page-link"
+          nextClassName="page-item"
+          nextLinkClassName="page-link"
+          breakLabel="..."
+          breakClassName="page-item"
+          breakLinkClassName="page-link"
+          containerClassName="pagination"
+          activeClassName="active"
+          renderOnZeroPageCount={null}
+        />
+      </div>
     </div>
   );
 }
